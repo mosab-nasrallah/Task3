@@ -1,0 +1,26 @@
+@import url(variables.css);
+.button {
+  padding: 0.625rem 1.25rem;
+  border-radius: var(--raduis);
+}
+.green-fill {
+  background-color: var(--bg-green);
+}
+.show-on-desktop {
+  display: none;
+}
+
+.gap-1-25 {
+  gap: var(--gap);
+}
+
+@media (min-width: 40.625rem) {
+  .show-on-desktop {
+    display: flex;
+  }
+
+  .placeholder,
+  .show-on-mobile {
+    display: none;
+  }
+}

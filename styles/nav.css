@@ -1,0 +1,18 @@
+@import url(variables.css);
+.header-wrapper {
+  background-color: var(--hd-bg-color);
+  justify-content: space-between;
+  padding: var(--padding);
+  white-space: nowrap;
+}
+
+.show-on-mobile {
+  display: flex;
+}
+.placeholder {
+  visibility: hidden;
+}
+
+.nav-buttons > img {
+  max-width: 6.25rem;
+}
