@@ -3,48 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <meta
+      name="description"
+      content="Reverifi is a Real Estate website designed to help you find your dream house"
+    />
+    <meta
+      name="keywords"
+      content="realstate, real, estate, Reverifi, rent, buy, events, citys"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="styles/variables.css" />
-    <link rel="stylesheet" href="styles/global.css" />
-    <link rel="stylesheet" href="styles/layout.css" />
+    <link rel="stylesheet" href="styles/main.css" />
 
-    <link rel="stylesheet" href="styles/nav.css" />
-    <link rel="stylesheet" href="styles/hero.css" />
-
-    <link rel="stylesheet" href="styles/utility.css" />
-
-    <title>Document</title>
+    <title>Reverifi Real Estate</title>
   </head>
   <body>
     <header>
       <nav>
         <div class="header-wrapper flex row">
-          <object class="show-on-mobile" data="Assets/SVGs/menu.svg">
-            Your browser does not support SVGs.
-          </object>
+          <img
+            class="show-on-mobile"
+            src="Assets/SVGs/menu.svg"
+            alt=" Menu Icon"
+            aria-expanded="false"
+          />
 
-          <div class="nav-buttons flex row gap-1-25">
-            <img src="Assets/Imgs/logo img.png" alt="Re Erifi Logo" />
-            <div class="flex row gap-1-25 nav-buttons show-on-desktop">
+          <div class="flex row gap-1-25">
+            <img
+              class="logo-header"
+              src="Assets/Imgs/logo img.png"
+              alt="Reverifi Logo"
+            />
+            <div
+              class="flex row gap-1 nav-buttons show-on-desktop hide-on-tablet"
+            >
               <a href="">How we Work</a>
-              <a href=""> Find an Agent</a>
+              <a href="">Find an Agent</a>
               <a href="">Knowledge Center</a>
             </div>
           </div>
-
-          <object
+          <img
+            src="Assets/SVGs/menu.svg"
             class="show-on-mobile placeholder"
-            data="Assets/SVGs/menu.svg"
-          >
-            Your browser does not support SVGs.
-          </object>
+            alt="hidden menu icon"
+          />
+
           <div class="login-container flex row gap-1-25 show-on-desktop">
             <a href="">Sign In</a>
             <a href="" class="green-fill button">Join Now</a>
@@ -53,28 +68,645 @@
       </nav>
     </header>
     <main>
-      <section class="hero flex gap-1-25">
-        <h1>Search our listings for your next purchase</h1>
-        <div class="hero-input">
-          <object
-            class="absulote location"
-            data="Assets/SVGs/Location.svg"
-            type=""
-          ></object>
-          <input
-            placeholder="Enter City, neighborhood, ZIP, or address"
-            type="text"
-            name=""
-            id=""
-          />
-          <object
-            class="absulote search green-fill button"
-            data="Assets/SVGs/Search.svg"
-            type=""
-          ></object>
+      <div class="content-wrapper flex gap-1-25">
+        <div class="flex extended bg-white">
+          <section class="hero flex gap-3">
+            <div class="hero-left">
+              <h1>Search our listings for your next purchase</h1>
+              <div class="hero-input">
+                <img
+                  class="absulote location"
+                  src="Assets/SVGs/Location.svg"
+                  alt="location pin icon"
+                />
+
+                <input
+                  placeholder="Enter City, neighborhood, ZIP, or address"
+                  type="text"
+                  aria-label="Search Box"
+                />
+                <img
+                  src="Assets/SVGs/Search.svg"
+                  alt="Search icon"
+                  class="absulote search green-fill button"
+                />
+              </div>
+            </div>
+            <img
+              src="Assets/Imgs/Hero.png"
+              alt="illustration of 2 humans infront of a house"
+            />
+          </section>
         </div>
-      </section>
+        <div class="flex extended bg-white">
+          <section class="featured-listing flex">
+            <h2>Our Featured Listing</h2>
+            <div class="flex cards-contianer row">
+              <div class="card">
+                <div class="img-container">
+                  <span class="label orange">New</span>
+
+                  <img src="Assets/Imgs/Apartment1.jpg" alt="Apartment1 img" />
+                  <div class="face">
+                    <img src="Assets/Imgs/Portrait.png" alt="Owner's photo" />
+                  </div>
+                </div>
+                <div class="card-content flex">
+                  <div class="title-row flex row">
+                    <span> <h3>Apartment#1</h3> </span
+                    ><span class="subtitle distance">
+                      <img
+                        src="Assets/SVGs/Location.svg"
+                        alt="Location Pin icon"
+                      />
+
+                      1.1km away
+                    </span>
+                  </div>
+                  <span class="subtitle">Bronx, NY 10459</span>
+                  <div class="features flex row">
+                    <span class="subtitle"
+                      >2
+                      <img src="Assets/SVGs/bedroom.svg" alt="bedroom Icon" />
+                    </span>
+                    <span
+                      ><img src="Assets/SVGs/wifi (1).svg" alt="Wifi Icon"
+                    /></span>
+                    <span
+                      ><img src="Assets/SVGs/bathtub.svg" alt="bathtub Icon" />
+                    </span>
+                    <span>
+                      <img
+                        src="Assets/SVGs/air-conditioner.svg"
+                        alt="air conditioner icon"
+                    /></span>
+                    <span
+                      ><img src="Assets/SVGs/bench.svg" alt="bench Icon"
+                    /></span>
+                  </div>
+                </div>
+                <div class="separator"></div>
+
+                <div class="title-row flex row card-content">
+                  <span class="vertical-centering"> <h3>$30,000</h3> </span>
+                  <div class="subtitle distance">
+                    <img
+                      src="Assets/SVGs/Share.svg"
+                      class="card-button"
+                      alt="Share icon"
+                    />
+                    <img
+                      src="Assets/SVGs/Heart.svg"
+                      class="card-button"
+                      alt="Share icon"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card show-on-desktop">
+                <div class="img-container">
+                  <span class="label green">Rent</span>
+                  <img
+                    src="Assets/Imgs/Apartment2.jpg"
+                    alt="Apartment2 image"
+                  />
+                  <div class="face">
+                    <img src="Assets/Imgs/Portrait.png" alt="Owner's photo" />
+                  </div>
+                </div>
+                <div class="card-content flex">
+                  <div class="title-row flex row">
+                    <span> <h3>Apartment#1</h3> </span
+                    ><span class="subtitle distance">
+                      <img
+                        src="Assets/SVGs/Location.svg"
+                        alt="Location Pin icon"
+                      />
+                      1.1km away
+                    </span>
+                  </div>
+                  <span class="subtitle">Bronx, NY 10459</span>
+                  <div class="features flex row">
+                    <span class="subtitle"
+                      >2
+                      <img src="Assets/SVGs/bedroom.svg" alt="bedroom icon" />
+                    </span>
+                    <span
+                      ><img src="Assets/SVGs/wifi (1).svg" alt="Wifi Icon"
+                    /></span>
+                    <span
+                      ><img src="Assets/SVGs/bathtub.svg" alt="bathtub Icon" />
+                    </span>
+                    <span>
+                      <img
+                        src="Assets/SVGs/air-conditioner.svg"
+                        alt="air conditioner icon"
+                    /></span>
+                    <span
+                      ><img src="Assets/SVGs/bench.svg" alt="bench icon"
+                    /></span>
+                  </div>
+                </div>
+                <div class="separator"></div>
+
+                <div class="title-row flex row card-content">
+                  <span class="vertical-centering"> <h3>$123/Month</h3> </span>
+                  <div class="subtitle distance">
+                    <object
+                      class="card-button"
+                      data="Assets/SVGs/Share.svg"
+                      type=""
+                    ></object>
+                    <object
+                      class="card-button"
+                      data="Assets/SVGs/Heart.svg"
+                      type=""
+                    ></object>
+                  </div>
+                </div>
+              </div>
+              <div class="card show-on-desktop">
+                <div class="img-container">
+                  <span class="label orange">New</span>
+                  <span class="label green second">Rent</span>
+                  <img
+                    src="Assets/Imgs/Apartment3.jpg"
+                    alt="Apartment3 image"
+                  />
+                  <div class="face">
+                    <img src="Assets/Imgs/Portrait.png" alt="Owner's photo" />
+                  </div>
+                </div>
+                <div class="card-content flex">
+                  <div class="title-row flex row">
+                    <span> <h3>Apartment#1</h3> </span
+                    ><span class="subtitle distance">
+                      <object data="Assets/SVGs/Location.svg" type=""></object>
+                      1.1km away
+                    </span>
+                  </div>
+                  <span class="subtitle">Bronx, NY 10459</span>
+                  <div class="features flex row">
+                    <span class="subtitle"
+                      >2
+                      <img src="Assets/SVGs/bedroom.svg" alt="bedroom icon" />
+                    </span>
+                    <span
+                      ><img src="Assets/SVGs/wifi (1).svg" alt="Wifi Icon"
+                    /></span>
+                    <span
+                      ><img src="Assets/SVGs/bathtub.svg" alt="bathtub Icon" />
+                    </span>
+                    <span>
+                      <img
+                        src="Assets/SVGs/air-conditioner.svg"
+                        alt="air conditioner icon"
+                    /></span>
+                    <span
+                      ><img src="Assets/SVGs/bench.svg" alt="bench icon"
+                    /></span>
+                  </div>
+                </div>
+                <div class="separator"></div>
+
+                <div class="title-row flex row card-content">
+                  <span class="vertical-centering"> <h3>$30,000</h3> </span>
+                  <div class="subtitle distance">
+                    <object
+                      class="card-button"
+                      data="Assets/SVGs/Share.svg"
+                      type=""
+                    ></object>
+                    <object
+                      class="card-button"
+                      data="Assets/SVGs/Heart.svg"
+                      type=""
+                    ></object>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="trackers flex row show-on-mobile">
+              <div class="dot active"></div>
+              <div class="dot inactive"></div>
+              <div class="dot inactive"></div>
+              <div class="dot inactive"></div>
+              <div class="dot inactive"></div>
+              <div class="dot inactive"></div>
+              <div class="dot inactive"></div>
+            </div>
+          </section>
+        </div>
+        <div class="flex extended bg-color-grey">
+          <section class="flex event">
+            <h2>Events</h2>
+            <div class="schedule flex row">
+              <span class="checked"> All </span>
+              <span> Upcoming </span>
+              <span> Past </span>
+            </div>
+            <div class="slider-container flex row">
+              <div class="card with-shadow">
+                <div class="img-container">
+                  <span class="label orange show-on-desktop">Personal</span>
+                  <span class="date-label green-fill"
+                    >08 <br />
+                    Oct</span
+                  >
+                  <img src="Assets/Imgs/Theater.png" alt="Theater image" />
+                </div>
+                <div class="card-content no-gap flex">
+                  <div class="title-row flex row">
+                    <span>Lorem ipsum </span
+                    ><span class="subtitle distance">
+                      <i class="fa-solid fa-plus plus-icon hover-plus"></i>
+                      <object
+                        data="Assets/SVGs/Share.svg"
+                        class="card-button"
+                        type=""
+                      ></object>
+                    </span>
+                  </div>
+                  <span class="subtitle small-font"
+                    >7:30 - 10:30PM @someplace</span
+                  >
+                  <div class="to-right">
+                    <object data="Assets/SVGs/people.svg" type=""></object> 182
+                  </div>
+                </div>
+              </div>
+              <div class="card with-shadow show-on-desktop">
+                <div class="img-container">
+                  <span class="label orange show-on-desktop">Perosnal</span>
+                  <span class="date-label green-fill"
+                    >08 <br />
+                    Oct</span
+                  >
+                  <img
+                    src="Assets/Imgs/People playing.png"
+                    alt="People playing image"
+                  />
+                </div>
+                <div class="card-content no-gap flex">
+                  <div class="title-row flex row">
+                    <span>Lorem ipsum </span
+                    ><span class="subtitle distance">
+                      <i class="fa-solid fa-plus plus-icon"></i>
+                      <object
+                        data="Assets/SVGs/Share.svg"
+                        class="card-button"
+                        type=""
+                      ></object>
+                    </span>
+                  </div>
+                  <span class="subtitle small-font"
+                    >7:30 - 10:30PM @someplace</span
+                  >
+                  <div class="to-right">
+                    <object data="Assets/SVGs/people.svg" type=""></object> 182
+                  </div>
+                </div>
+              </div>
+              <div class="card with-shadow show-on-desktop">
+                <div class="img-container">
+                  <span class="label green show-on-desktop">Webinar</span>
+                  <span class="date-label green-fill"
+                    >08 <br />
+                    Oct</span
+                  >
+                  <img
+                    src="Assets/Imgs/People Dancing.png"
+                    alt="People Dancing image"
+                  />
+                </div>
+                <div class="card-content no-gap flex">
+                  <div class="title-row flex row">
+                    <span>Lorem ipsum </span
+                    ><span class="subtitle distance">
+                      <i class="fa-solid fa-plus plus-icon"></i>
+                      <object
+                        data="Assets/SVGs/Share.svg"
+                        class="card-button"
+                        type=""
+                      ></object>
+                    </span>
+                  </div>
+                  <span class="subtitle small-font"
+                    >7:30 - 10:30PM @someplace</span
+                  >
+                  <div class="to-right">
+                    <object data="Assets/SVGs/people.svg" type=""></object> 182
+                  </div>
+                </div>
+              </div>
+              <div class="card with-shadow show-on-desktop">
+                <div class="img-container">
+                  <span class="label green show-on-desktop">Webinar</span>
+                  <span class="date-label green-fill"
+                    >08 <br />
+                    Oct</span
+                  >
+                  <img
+                    src="Assets/Imgs/People meeting.png"
+                    alt="meeting image"
+                  />
+                </div>
+                <div class="card-content no-gap flex">
+                  <div class="title-row flex row">
+                    <span>Lorem ipsum </span
+                    ><span class="subtitle distance">
+                      <i class="fa-solid fa-plus plus-icon"></i>
+                      <object
+                        data="Assets/SVGs/Share.svg"
+                        class="card-button"
+                        type=""
+                      ></object>
+                    </span>
+                  </div>
+                  <span class="subtitle small-font"
+                    >7:30 - 10:30PM @someplace</span
+                  >
+                  <div class="to-right">
+                    <object data="Assets/SVGs/people.svg" type=""></object> 182
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="flex extended bg-white padding-block">
+          <section class="services flex space-between">
+            <div class="formmatting-on-desktop flex gap-1">
+              <h2 class="start">reverifi<span class="green-text">+</span></h2>
+              <p class="subtitle">
+                Search our network and find your supporting team to complete the
+                process
+              </p>
+              <a href="" class="green-fill button start">See More</a>
+            </div>
+            <div class="services-list grid">
+              <div class="service flex">
+                <object
+                  data="Assets/SVGs/Law.svg"
+                  type="image/svg+xml"
+                ></object>
+                <span>Attorney</span>
+              </div>
+              <div class="service flex">
+                <object
+                  data="Assets/SVGs/camera.svg"
+                  type="image/svg+xml"
+                ></object>
+                <span>Photographer</span>
+              </div>
+              <div class="service flex">
+                <object
+                  data="Assets/SVGs/agent.svg"
+                  type="image/svg+xml"
+                ></object>
+                <span>Agent</span>
+              </div>
+              <div class="service flex">
+                <object
+                  data="Assets/SVGs/Clean.svg"
+                  type="image/svg+xml"
+                ></object>
+                <span>Cleaning Services</span>
+              </div>
+              <div class="service flex">
+                <object
+                  data="Assets/SVGs/HomeLens.svg"
+                  type="image/svg+xml"
+                ></object>
+                <span>Home Inspectors</span>
+              </div>
+              <div class="service flex">
+                <object
+                  data="Assets/SVGs/insurance.svg"
+                  type="image/svg+xml"
+                ></object>
+                <span>Insurance Provider</span>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="flex bg-color-grey extended">
+          <section class="no-padding cities-section">
+            <h2>Explore our Listings</h2>
+            <div class="grid-citys">
+              <div class="city-imgs main-img">
+                <div class="overlay"></div>
+                <img src="Assets/Imgs/New_York.jpg" alt="New York image" />
+                <div class="floating-text flex absulote">
+                  <h2 class="start">New York</h2>
+                  <p class="start">
+                    <span class="green-text">2</span> Listings
+                  </p>
+                </div>
+                <div class="trackers absulote flex row show-on-mobile">
+                  <div class="dot active"></div>
+                  <div class="dot inactive"></div>
+                  <div class="dot inactive"></div>
+                  <div class="dot inactive"></div>
+                  <div class="dot inactive"></div>
+                  <div class="dot inactive"></div>
+                  <div class="dot inactive"></div>
+                </div>
+              </div>
+              <div class="city-imgs show-on-desktop">
+                <div class="overlay"></div>
+                <img src="Assets/Imgs/California.jpg" alt="California image" />
+                <div class="floating-text flex absulote">
+                  <h2 class="start">California</h2>
+                  <p class="start">
+                    <span class="green-text">2</span> Listings
+                  </p>
+                </div>
+              </div>
+              <div class="city-imgs show-on-desktop">
+                <div class="overlay"></div>
+                <img src="Assets/Imgs/Florida.jpg" alt="Florida image" />
+                <div class="floating-text flex absulote">
+                  <h2 class="start">Florida</h2>
+                  <p class="start">
+                    <span class="green-text">2</span> Listings
+                  </p>
+                </div>
+              </div>
+              <div class="city-imgs show-on-desktop">
+                <div class="overlay"></div>
+                <img src="Assets/Imgs/Hawaii.jpg" alt="Hawaii image" />
+                <div class="floating-text flex absulote">
+                  <h2 class="start">Hawaii</h2>
+                  <p class="start">
+                    <span class="green-text">2</span> Listings
+                  </p>
+                </div>
+              </div>
+              <div class="city-imgs show-on-desktop">
+                <div class="overlay"></div>
+                <img src="Assets/Imgs/Alaska.png" alt="Alaska image" />
+                <div class="floating-text flex absulote">
+                  <h2 class="start">Alaska</h2>
+                  <p class="start">
+                    <span class="green-text">2</span> Listings
+                  </p>
+                </div>
+              </div>
+              <div class="city-imgs show-on-desktop">
+                <div class="overlay"></div>
+                <img src="Assets/Imgs/New Jersey.jpg" alt="New Jersey image" />
+                <div class="floating-text flex absulote">
+                  <h2 class="start">New Jersey</h2>
+                  <p class="start">
+                    <span class="green-text">2</span> Listings
+                  </p>
+                </div>
+              </div>
+              <div class="city-imgs show-on-desktop">
+                <div class="overlay"></div>
+                <img src="Assets/Imgs/Georgia .jpg" alt="Georgia image" />
+                <div class="floating-text flex absulote">
+                  <h2 class="start">Georgia</h2>
+                  <p class="start">
+                    <span class="green-text">2</span> Listings
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="flex extended">
+          <section class="claim-address no-padding top-padding">
+            <img
+              src="Assets/Imgs/Mab-mobile.png"
+              class="show-on-mobile"
+              alt="Map image"
+            />
+            <img
+              src="Assets/Imgs/Map.png"
+              class="show-on-desktop"
+              alt="Map image"
+            />
+
+            <div class="display-content absulote">
+              <img
+                src="Assets/SVGs/Pin-with-star.svg"
+                class="show-on-mobile pin-start-icon"
+                alt="pin image"
+              />
+              <div class="claiming-input">
+                <h2>Claim your Address</h2>
+                <div class="input-container absulote flex">
+                  <object
+                    class="absulote location"
+                    data="Assets/SVGs/Location.svg"
+                    type=""
+                  ></object>
+                  <input
+                    placeholder="Enter your Address"
+                    type="text"
+                    aria-label="address input field"
+                  />
+                  <!-- <img
+                  class="absulote search green-fill button"
+                  src="Assets/SVGs/Search.svg"
+                  alt="Search Icon"
+                /> -->
+                  <div class="absulote enter green-fill button">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
     </main>
-    <footer></footer>
+
+    <footer>
+      <div class="flex">
+        <div class="flex bg-green extended">
+          <section class="no-padding">
+            <div class="flex gap-1 padding-block row-on-desktop">
+              <div class="text-title vertical-centering">
+                Start your real estate journey withs
+                <span
+                  ><img src="Assets/SVGs/logo-white.svg" alt="reverifi logo"
+                /></span>
+              </div>
+              <a href="" class="button bg-white">Join us</a>
+            </div>
+          </section>
+        </div>
+        <div class="flex bg-grey extended">
+          <section>
+            <div class="flex row socials">
+              <img src="Assets/Imgs/Social_face.png" alt="facebook logo" />
+              <img src="Assets/Imgs/Social_insta.png" alt="imstagram logo" />
+              <img src="Assets/Imgs/Social_youtube.png" alt="youtube logo" />
+              <img src="Assets/Imgs/Social_LN.png" alt="Linkedin logo" />
+            </div>
+            <!-- <div class="flex"></div> -->
+            <div class="flex contact row-on-desktop">
+              <div class="flex column">
+                <img src="Assets/Imgs/logo img.png" alt="reverifi logo" />
+                <span
+                  ><img
+                    src="Assets/SVGs/Bin-green.svg"
+                    alt="location pin icon"
+                  />
+                  712-427-1242</span
+                >
+                <span
+                  ><img
+                    src="Assets/SVGs/mail.svg"
+                    alt="mail icon"
+                  />support@example.com</span
+                >
+                <span
+                  ><img
+                    src="Assets/SVGs/Phone.svg"
+                    alt="phone icon"
+                  />319-764-9876</span
+                >
+              </div>
+              <div class="flex column">
+                <h3>Helpful Link</h3>
+                <span>Sign in</span>
+                <span>Support</span>
+                <span>FAQ’s</span>
+              </div>
+              <div class="flex column">
+                <h3>Company</h3>
+                <span>About us</span>
+                <span>Privacy</span>
+                <span>Terms of use</span>
+                <span>Accessibility</span>
+              </div>
+
+              <div class="flex column subscribe-container">
+                <h3>Subscribe to our Newsletter</h3>
+                <div class="subscribe">
+                  <input
+                    type="text"
+                    placeholder="Subscribe to our Newsletter"
+                    aria-label="Newsletter subscribtion field"
+                  />
+                  <a href="" class="green-fill button">Subscribe</a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="flex bg-black extended">
+          <section>
+            <p class="padding-block">
+              Copyright © 2021 Reverifi. All rights reserved
+            </p>
+          </section>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

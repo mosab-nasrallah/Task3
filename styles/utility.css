@@ -6,21 +6,70 @@
 .green-fill {
   background-color: var(--bg-green);
 }
+.small-font {
+  font-size: 0.75rem;
+}
 .show-on-desktop {
   display: none;
 }
-
-.gap-1-25 {
-  gap: var(--gap);
+.no-padding {
+  padding: 0;
+}
+.no-gap {
+  gap: 0 !important;
 }
 
+.service {
+  text-align: center;
+}
+.gap-3 {
+  gap: 3rem;
+}
+.gap-1 {
+  gap: 1rem;
+}
+.start {
+  align-self: flex-start;
+}
+.bg-white {
+  background-color: white;
+}
+
+main section,
+.header-wrapper,
+footer section {
+  width: 100%;
+  max-width: 90rem;
+  padding: var(--padding);
+}
+.absulote {
+  position: absolute;
+}
+.show-on-mobile {
+  display: flex;
+}
+.vertical-centering {
+  align-items: center;
+  display: flex;
+}
 @media (min-width: 40.625rem) {
   .show-on-desktop {
+    display: block;
+  }
+  .nav-buttons,
+  .login-container {
     display: flex;
   }
-
   .placeholder,
   .show-on-mobile {
     display: none;
+  }
+}
+@media (min-width: 40.625rem) and (max-width: 48rem) {
+  .hide-on-tablet {
+    display: none;
+  }
+  .grid-citys {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 }

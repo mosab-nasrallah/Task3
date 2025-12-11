@@ -5,9 +5,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: 0.2s;
 }
 body {
-  background-color: var(--bg-body);
+  min-height: 300vh;
+  background-color: white;
 }
 a {
   text-decoration: none;
@@ -17,4 +19,19 @@ a {
 }
 input {
   border: unset;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+h3 {
+  margin: 0;
+}
+a:hover {
+  opacity: 0.8;
+}
+@media (min-width: 40.625rem) {
+  body {
+    background-color: var(--bg-body);
+  }
 }
